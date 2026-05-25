@@ -4,7 +4,7 @@ import {fetchAndActivate, getValue, RemoteConfig} from "@angular/fire/remote-con
 @Injectable({
   providedIn: 'root',
 })
-export class Remoteconfig {
+export class RemoteConfigService {
   private remoteConfig = inject(RemoteConfig);
 
   async init() {

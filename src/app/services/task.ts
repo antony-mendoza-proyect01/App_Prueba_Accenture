@@ -1,11 +1,12 @@
 import {inject, Injectable} from '@angular/core';
 import {collection, deleteDoc, doc, Firestore, onSnapshot, setDoc, updateDoc} from "@angular/fire/firestore";
 import {BehaviorSubject} from "rxjs";
+import {Task} from "../models/task";
 
 @Injectable({
   providedIn: 'root',
 })
-export class Task {
+export class TaskService {
   private firestore = inject(Firestore);
 
   private tasksSubject = new BehaviorSubject<Task[]>([]);

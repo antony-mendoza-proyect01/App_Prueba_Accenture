@@ -6,7 +6,7 @@ import {Category} from "../models/category";
 @Injectable({
   providedIn: 'root',
 })
-export class Category {
+export class CategoryService {
 
   private firestore = inject(Firestore);
 
